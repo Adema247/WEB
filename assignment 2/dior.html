@@ -5,39 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dior - Adema's Beauty Shop</title>
   <link rel="stylesheet" href="style.css">
+   <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      border-radius: 10px;
+    }
+    .carousel img {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>&#10024; Dior Collection &#10024;</h1>
-    <nav class="nav-bar">
+  
+   <header class="navbar">
+    <div class="logo">&#128132; Makeup</div>
+    <nav class="nav-links">
       <a href="index.html">&#127968; Home</a>
       <a href="catalog.html">&#128194; Catalog</a>
-      <a href="brands.html">&#128132; Brands</a>
+      <a href="brands.html">&#128141; Brands</a>
     </nav>
   </header>
 
-  <main class="products-container">
+  <main class="products">
     <div class="product-card">
       <div class="product-image">
         <img src="https://avatars.mds.yandex.net/i?id=3a3be7252a35257512dba03a9f204dcd_l-5528595-images-thumbs&n=13" alt="DIOR Miss Dior">
       </div>
       <h3>DIOR Miss Dior Blooming Bouquet</h3>
-      <p>Duet of damask rose and peony with white musk notes.</p>
-      <p>50 ml</p>
+      <p>Delicate duet of damask rose and peony with soft white musk notes.</p>
+      <p><strong>50 ml</strong></p>
       <p>Price: <s>54,100₸</s> <strong>45,985₸</strong></p>
       <button>Buy</button>
     </div>
 
     <div class="product-card">
       <div class="product-image">
-        <img src="https://media.centrepointstores.com/i/centrepoint/164916773_01-2100.jpg" alt="DIOR Sauvage" height="600px">
+        <img src="https://media.centrepointstores.com/i/centrepoint/164916773_01-2100.jpg" alt="DIOR Sauvage">
       </div>
       <h3>DIOR Sauvage</h3>
       <p>Fresh Calabrian bergamot with sensual woody amber notes.</p>
-      <p>60 ml</p>
+      <p><strong>60 ml</strong></p>
       <p>Price: <s>51,150₸</s> <strong>43,477₸</strong></p>
       <button>Buy</button>
     </div>
   </main>
+
+  <footer>
+    <p>2025 Adema's Beauty Shop. All rights reserved.</p>
+  </footer>
 </body>
 </html>

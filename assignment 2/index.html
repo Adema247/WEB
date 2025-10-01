@@ -7,30 +7,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="banner">
-    <h1>&#10024; Adema's Beauty Shop &#10024;</h1>
-    <p class="promo">&#128293; Discounts up to -15% on top brands! &#128293;</p>
+
+  <header class="navbar">
+    <div class="logo">&#10024; Beauty Shop</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="brands.html">Brands</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="city-section">
-    <h2>Select your city:</h2>
-    <select>
-      <option>Astana</option>
-      <option>Almaty</option>
-      <option>Ust-Kamenogorsk</option>
-    </select>
-  </section>
+  <div class="grid-container">
+    <div class="grid-header banner">
+      <h1>&#10024; Adema's Beauty Shop &#10024;</h1>
+      <p class="promo">&#128293; Discounts up to -15% on top brands! &#128293;</p>
+    </div>
 
-  <nav class="main-nav">
-    <ul>
-      <li><a href="catalog.html">Catalog</a></li>
-      <li><a href="brands.html">Brands</a></li>
-    </ul>
-  </nav>
+    <aside class="sidebar">
+      <h2>Select your city:</h2>
+      <select>
+        <option>Astana</option>
+        <option>Almaty</option>
+        <option>Ust-Kamenogorsk</option>
+      </select>
+    </aside>
 
-<marquee behavior="scroll" direction="left" style="color: white; background-color:  #1b263b; font-size: 18px; padding: 10px;">
-    Project name:Cosmetics Store | Author: Adema | Group: SE-2407
-</marquee>
+    <main class="main-content">
+      <h2>Welcome!</h2>
+      <p>Explore our wide range of cosmetics and fragrances from top global brands.</p>
+    </main>
 
+    <footer class="footer">
+      <marquee behavior="scroll" direction="left">
+        Project name: Cosmetics Store | Author: Adema | Group: SE-2407
+      </marquee>
+    </footer>
+  </div>
 </body>
 </html>

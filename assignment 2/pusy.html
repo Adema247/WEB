@@ -5,19 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PUSY - Adema's Beauty Shop</title>
   <link rel="stylesheet" href="style.css">
+   <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      border-radius: 10px;
+    }
+    .carousel img {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>&#10024; PUSY &#10024;</h1>
-    <nav class="nav-bar">
+  
+   <header class="navbar">
+    <div class="logo">&#128132; Makeup</div>
+    <nav class="nav-links">
       <a href="index.html">&#127968; Home</a>
       <a href="catalog.html">&#128194; Catalog</a>
-      <a href="brands.html">&#128132; Brands</a>
+      <a href="brands.html">&#128141; Brands</a>
     </nav>
   </header>
 
   <main class="products">
-
     <div class="product-card">
       <div class="carousel">
         <img src="https://pcdn.goldapple.ru/p/p/19000388767/web/696d674d61696e5064708ddc5c81852aa1d.jpg" alt="PUSY brow mascara">
@@ -26,21 +40,19 @@
       <h2>PUSY brow mascara</h2>
       <p>Delicately colors and thickens hairs, adding natural volume without heaviness.</p>
       <p>Volume: 2.7 ml</p>
-      <p>Price: <s>3450</s> 2932 ₸</p>
+      <p>Price: <s>3450₸</s> 2932₸</p>
       <button>Buy</button>
     </div>
 
     <div class="product-card">
-      <div class="image-slider">
-        <div class="carousel">
-          <img src="https://avatars.mds.yandex.net/i?id=ddaeee866c0c23f62fc5e3dfd60013c2_l-8567615-images-thumbs&n=13" alt="PUSY Face Foam" height="400px">
-          <img src="https://pusybeauty.com/cdn/shop/files/4_70bb07c4-39af-473b-82f5-780c1d8ef79f.png?v=1746014748" alt="PUSY Face Foam" height="400px">
-        </div>
+      <div class="carousel">
+        <img src="https://avatars.mds.yandex.net/i?id=ddaeee866c0c23f62fc5e3dfd60013c2_l-8567615-images-thumbs&n=13" alt="PUSY Face Foam">
+        <img src="https://pusybeauty.com/cdn/shop/files/4_70bb07c4-39af-473b-82f5-780c1d8ef79f.png?v=1746014748" alt="PUSY Face Foam">
       </div>
       <h3>PUSY Face Foam</h3>
       <p>Gentle cleansing foam with AHA acids and vitamin C.</p>
       <p>150 ml</p>
-      <p>Price: <s>6,450₸</s> <strong>5,482₸</strong></p>
+      <p>Price: <s>6450₸</s> <strong>5482₸</strong></p>
       <button>Buy</button>
     </div>
 

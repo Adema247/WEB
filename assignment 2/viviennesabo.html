@@ -3,21 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VivienneSabo - Adema's Beauty Shop</title>
+  <title>Vivienne Sabó - Adema's Beauty Shop</title>
   <link rel="stylesheet" href="style.css">
+   <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      border-radius: 10px;
+    }
+    .carousel img {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>&#10024; Vivienne Sabo &#10024;</h1>
-    <nav class="nav-bar">
+
+   <header class="navbar">
+    <div class="logo">&#128132; Makeup</div>
+    <nav class="nav-links">
       <a href="index.html">&#127968; Home</a>
       <a href="catalog.html">&#128194; Catalog</a>
-      <a href="brands.html">&#128132; Brands</a>
+      <a href="brands.html">&#128141; Brands</a>
     </nav>
   </header>
 
-  <main class="products-container">
-     <div class="product-card">
+  <main class="products">
+    <div class="product-card">
       <div class="carousel">
         <img src="https://basket-26.wbbasket.ru/vol4770/part477029/477029288/images/big/1.webp" alt="VIVIENNE SABO la la laque">
         <img src="https://www.scent.ru/upload/iblock/09f/4l822xzwty6ws8lz2tgen3h0vir788aa/398a5d15_242b_11f0_80df_a0d3c1fb70cd_7bdc13aa_25a4_11f0_80e0_a0d3c1fb70cd.jpeg" alt="VIVIENNE SABO la la laque">
@@ -25,7 +40,7 @@
       <h2>VIVIENNE SABO la la laque</h2>
       <p>Glossy balm-lipstick with a melting texture for lacquered soft lips.</p>
       <p>Weight: 2.5 g</p>
-      <p>Price: <s>3574</s> 3037 ₸</p>
+      <p>Price: <s>3574₸</s> 3037₸</p>
       <button>Buy</button>
     </div>
 
@@ -34,28 +49,16 @@
         <img src="https://static.onlinetrade.ru/img/items/b/rumyana_dlya_litsa_matovye_vivienne_sabo_macaron_ton_04_3123797_7.jpg" alt="VIVIENNE SABO macaron matte face blush">
         <img src="https://www.letu.ru/common/img/pim/2025/06/AUX_3d0084b6-85c9-40ad-b9c1-ecfd34a8ebc8.jpg" alt="VIVIENNE SABO macaron matte face blush">
       </div>
-      <h2>VIVIENNE SABO macaron matte face blush</h2>
+      <h2>VIVIENNE SABO macaron matte face blush 04</h2>
       <p>Blush in four shades with a matte finish. Tender, light, and natural look.</p>
       <p>Weight: 4.1 g</p>
-      <p>Price: <s>2684</s> 2281 ₸</p>
+      <p>Price: <s>2684₸</s> 2281₸</p>
       <button>Buy</button>
     </div>
   </main>
-  <script>
-    document.querySelectorAll('.carousel').forEach(carousel => {
-      let index = 0
-      const images = carousel.querySelectorAll('img')
-      images.forEach((img, i) => {
-        if (i !== 0) img.style.display = 'none'
-      })
 
-      carousel.addEventListener('click', () => {
-        images[index].style.display = 'none'
-        index = (index + 1) % images.length
-        images[index].style.display = 'block'
-      })
-    })
-  </script>
-
+  <footer>
+    <p>2025 Adema's Beauty Shop. All rights reserved.</p>
+  </footer>
 </body>
 </html>
