@@ -5,25 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PUSY - Adema's Beauty Shop</title>
   <link rel="stylesheet" href="style.css">
-   <style>
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 10px;
-      border-radius: 10px;
-    }
-    .carousel img {
-      flex: 0 0 100%;
-      scroll-snap-align: center;
-      border-radius: 10px;
-    }
-  </style>
+   
 </head>
 <body>
   
    <header class="navbar">
-    <div class="logo">&#128132; Makeup</div>
+    <div class="logo">&#128132; PUSY </div>
     <nav class="nav-links">
       <a href="index.html">&#127968; Home</a>
       <a href="catalog.html">&#128194; Catalog</a>
@@ -55,23 +42,8 @@
       <p>Price: <s>6450₸</s> <strong>5482₸</strong></p>
       <button>Buy</button>
     </div>
-
   </main>
-<script>
-    document.querySelectorAll('.carousel').forEach(carousel => {
-      let index = 0
-      const images = carousel.querySelectorAll('img')
-      images.forEach((img, i) => {
-        if (i !== 0) img.style.display = 'none'
-      })
-
-      carousel.addEventListener('click', () => {
-        images[index].style.display = 'none'
-        index = (index + 1) % images.length
-        images[index].style.display = 'block'
-      })
-    })
-  </script>
   
+  <footer><p>2025 Adema’s Beauty Shop. All rights reserved.</p></footer>
 </body>
 </html>
